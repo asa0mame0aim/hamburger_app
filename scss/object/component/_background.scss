@@ -1,0 +1,79 @@
+@use "../../foundation/mixin";
+
+.c-main-visual{
+    background-image: url(/img/dummy.png);
+    position: relative;
+    height: 285px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+    @include mixin.pc{
+        height: 530px;
+    }
+}
+
+.p-branch-menu{
+    &__takeout{
+        position: relative;
+        background-image: url(/img/takeout.png);
+        width: calc(100% - 40px);
+        min-height: 100vh;
+        background-size: cover;
+        margin: 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include mixin.tab{
+            margin: 40px;
+        }
+    }
+    &__eatin{
+        position: relative;
+        background-image: url(/img/eatin.png);
+        width: calc(100% - 40px);
+        min-height: 100vh;
+        background-size: cover;
+        margin: 20px 20px 40px 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include mixin.tab{
+            margin: 40px 40px 40px 0;
+        }
+    }
+}
+
+.p-map{
+    background-image: url(/img/map.png);
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.8);
+    vertical-align: top; //mapの下の余白を除去
+}
+
+.p-footer{
+    background-image: url(/img/footer.png);
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    padding: 40px 0 30px 0;
+    text-align: center;
+    font-family: 'M+PLUS+1';
+
+    h3{
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
+        padding-bottom: 34px;
+    }
+    p{
+      font-size: 14px;
+      color: #fff;
+      font-weight: normal;
+    }
+}

@@ -1,0 +1,24 @@
+@use "mixin";
+
+body{
+    font-family: 'Robot', sans-serif;
+    font-weight: bold;
+    color: #707070;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 217px auto 150px;
+    @include mixin.pc{
+        grid-template-columns: 81% 19%;
+    }
+    button, input, select, textarea{
+        background-color: initial;
+        border-style: solid;
+        color: initial;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        color: #707070;
+    }
+}

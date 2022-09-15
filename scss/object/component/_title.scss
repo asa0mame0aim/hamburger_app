@@ -1,0 +1,99 @@
+@use "../../foundation/mixin";
+
+.c-header-title{
+    font-size: 40px;
+    color: #707070;
+    text-align: center;
+    padding-top: 40px;
+    text-decoration: none;
+    @include mixin.pc{
+        padding: 67px 0 0 45px;
+        font-size: 64px;
+        text-align: left;
+    }
+}
+
+.c-title{
+    &--sidebar{
+        position: absolute;
+        display: none;
+        @include mixin.pc{
+            display: block;
+            font-size: 34px;
+            padding: 82px 0 0 46px;
+        }
+    }
+
+    &--items{
+        font-size: 24px;
+        padding-left: 46px;
+        left: 10%;
+        @include mixin.tab{
+            left: 55%;
+        }
+    }
+
+    &--main-visual{
+        font-size: 36px;
+        color: #fff;
+        position: absolute;
+        left: 25px;
+        line-height: 285px;
+        font-family: 'M+PLUS+1';
+    }
+
+    &--underline{
+        position: relative;
+        top: 20px;
+        left: 15px;
+        font-size: 41px;
+        color: #EAEAEA;
+        margin-bottom: 100px;
+        @include mixin.pc{
+            font-size: 80px;
+        }
+        &::before{
+            display: inline-block;
+            position: absolute;
+            content: '';
+            top: 70px;
+            left: 10px;
+            width: 40px;
+            height: 5px;
+            background-color: #fff;
+            @include mixin.pc{
+                width: 63px;
+                height: 3px;
+                top: 140px;
+            }
+        }
+    }
+
+    &--branch-menu{
+        font-size: 22px;
+        padding: 7px 0 3px 10px;
+    }
+
+    &--underline__map{
+        color: #fff;
+        font-size: 30px;
+        font-family: 'M+PLUS+1';
+        padding: 40px 0 20px 42px;
+        @include mixin.pc{
+            font-size: 36px;
+            padding: 83px 0 55px 119px;
+        }
+        &::before{
+            display: inline-block;
+            position: absolute;
+            content: '';
+            margin: 70px 0;
+            width: 75px;
+            height: 2px;
+            background-color: #fff;
+            @include mixin.pc{
+                margin: 100px 0;
+            } 
+        }
+    }
+}

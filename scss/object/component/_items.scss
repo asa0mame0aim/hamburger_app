@@ -1,0 +1,13 @@
+@use "../../foundation/mixin";
+
+.p-bm__items{
+    position: relative;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    height: auto;
+    background-size: contain;
+    padding: 7px 10px 15px 10px;
+    margin: 0 15px 15px 15px;
+    &__second{
+        margin-bottom: 5px;
+    }
+}

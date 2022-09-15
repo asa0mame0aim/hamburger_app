@@ -1,0 +1,17 @@
+@use "../foundation/mixin";
+
+.l-header{
+    height: 217px;
+    width: 100%;
+    background-color: #FFF7EF;
+    position: relative;
+
+    a{
+        text-decoration: none;
+    }
+    
+    @include mixin.tab {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}

@@ -1,0 +1,35 @@
+@use "../../foundation/mixin";
+
+.c-btn{
+    &--sidebar{
+    position: absolute;
+    font-size: 20px;
+    top: 14px;
+    right: 16px;
+    color: #707070;
+    font-weight: bold;
+    border: none;
+    @include mixin.tab{
+        font-size: 34px;
+        top: 18px;
+        right: 26px;
+    }
+    @include mixin.pc{
+        display: none;
+    }
+    }
+    &--close{
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 0 25px;
+            font-size: 70px;
+            font-weight: normal;
+            color: #707070;
+            border: none;
+            @include mixin.pc{
+                display: none;
+            }
+    }
+}
+

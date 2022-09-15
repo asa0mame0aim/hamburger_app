@@ -1,0 +1,14 @@
+@use "../foundation/mixin";
+
+.l-sidebar{
+    display: none;
+    background-color: #F2EDE9;
+    &.active{
+        display: block;
+    }
+    @include mixin.pc{
+        display: block;
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+}

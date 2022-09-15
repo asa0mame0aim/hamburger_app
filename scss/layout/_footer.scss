@@ -1,0 +1,8 @@
+@use "../foundation/mixin";
+
+.l-footer{
+    @include mixin.pc{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+}

@@ -1,0 +1,15 @@
+@use "../../foundation/mixin";
+
+.p-branch-menu__lists{
+    @include mixin.tab{
+        display: flex;
+    }
+}
+
+.p-branch-menu--container{
+    display: flex;
+    flex-flow: column;
+    color: #3C2A10;
+    font-family: 'M+PLUS+1';
+    bottom: 1%;
+}
