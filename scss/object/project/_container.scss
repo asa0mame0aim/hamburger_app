@@ -2,6 +2,7 @@
 
 .p-sidebar{
     &--container{
+        display: flex;
         font-family: 'M+PLUS+1';
         position: relative;
         &--details{

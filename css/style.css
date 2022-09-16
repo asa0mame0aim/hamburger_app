@@ -208,9 +208,11 @@ body.active::after {
   background-size: contain;
   padding: 7px 10px 15px 10px;
   margin: 0 15px 15px 15px;
+  align-items: flex-end;
+  margin-top: auto;
 }
-.p-bm__items__second {
-  margin-bottom: 5px;
+.p-bm__itemssecond {
+  margin-top: auto;
 }
 
 .c-text__sidebar--submenu {
@@ -406,6 +408,7 @@ body.active::after {
 }
 
 .p-sidebar--container {
+  display: flex;
   font-family: "M+PLUS+1";
   position: relative;
 }
@@ -441,13 +444,18 @@ body.active::after {
     display: flex;
   }
 }
-
-.p-branch-menu--container {
-  pdisplay: flex;
+.p-branch-menu__takeout {
+  display: flex;
   flex-flow: column;
+}
+.p-branch-menu__eatin {
+  display: flex;
+  flex-flow: column;
+}
+.p-branch-menu--container {
+  margin-top: auto;
   color: #3C2A10;
   font-family: "M+PLUS+1";
-  bottom: 1%;
 }
 
 /*-------------------------
