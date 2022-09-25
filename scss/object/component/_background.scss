@@ -46,13 +46,30 @@
 .p-map{
     background-image: url(/img/map.png);
     position: relative;
+    z-index: 1;
     min-height: 100vh;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: rgba(0, 0, 0, 0.8);
     vertical-align: top; //mapの下の余白を除去
+    &::after{
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background-color: rgba(0, 0, 0, 0.4);
+        @include mixin.tab{
+            height: 100%;
+        }
+        @include mixin.pc{
+            width: 60%;
+        }
+    }
 }
 
 .p-footer{

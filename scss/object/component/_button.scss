@@ -19,6 +19,9 @@
     }
     }
     &--close{
+        display: none;
+        &.active{
+            display: block;
             position: fixed;
             top: 0;
             right: 0;
@@ -30,6 +33,7 @@
             @include mixin.pc{
                 display: none;
             }
+        }
     }
 }
 

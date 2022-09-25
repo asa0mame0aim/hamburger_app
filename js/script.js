@@ -1,7 +1,8 @@
 $('.c-btn--sidebar').click(function(){
-    $('.l-sidebar, body').addClass('active');
+    $('.l-sidebar, body, .c-btn--close').toggleClass('active');
 });
 
 $('.c-btn--close').click(function(){
-    $('.l-sidebar, body').removeClass('active');
+    $('.l-sidebar, body, .c-btn--close').toggleClass('active');
 });
+

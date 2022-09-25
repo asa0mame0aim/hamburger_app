@@ -75,6 +75,8 @@
     }
 
     &--underline__map{
+        position: relative;
+        z-index: 3;
         color: #fff;
         font-size: 30px;
         font-family: 'M+PLUS+1';
