@@ -26,6 +26,7 @@ component
 @use "object/component/items";
 @use "object/component/text";
 @use "object/component/title";
+@use "object/component/list";
 
 /*----------------------------
 project
@@ -33,6 +34,8 @@ project
 @use "object/project/search";
 @use "object/project/container";
 @use "object/project/branchmenu";
+@use "object/project/content";
+@use "object/project/pagination";
 
 /*----------------------------
 utility

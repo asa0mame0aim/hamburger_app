@@ -1,0 +1,15 @@
+@use "../../foundation/mixin";
+
+/*-------------------------
+archive
+--------------------------*/
+
+.p-card__content{
+    position: relative;
+    background-color: #3C2B1C;
+    height: 100%;
+    margin-bottom: 21px;
+    &--details{
+        text-align: center;
+    }
+}

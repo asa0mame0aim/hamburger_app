@@ -1,0 +1,31 @@
+@use "../../foundation/mixin";
+
+.p-pagination--sp{
+    &__lists{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: normal;
+        padding: 40px 20px 30px 20px;
+    }
+}
+
+.p-pagination{
+    display: none;
+    &__list{
+        &--prev{
+            &::before{
+                content: '<<';
+                width: 17px;
+                height: 17px;
+            }
+        }
+        &--next{
+            &::after{
+                content: '>>';
+                width: 17px;
+                height: 17px;
+            }    
+        }
+    }
+}

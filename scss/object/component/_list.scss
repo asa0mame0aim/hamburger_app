@@ -1,0 +1,7 @@
+@use "../../foundation/mixin";
+
+.c-archive-visual__list{
+    @include mixin.tab{
+        display: flex;
+    }
+}
