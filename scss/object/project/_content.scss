@@ -8,7 +8,20 @@ archive
     position: relative;
     background-color: #3C2B1C;
     height: 100%;
-    margin-bottom: 21px;
+    width: calc(100% - 40px);
+    margin: 20px;
+    @include mixin.tab{
+        display: flex;
+        height: 355px;
+        width: calc(100% - 80px);
+        margin: 20px 40px;
+
+    }
+    @include mixin.pc{
+        height: 471px;
+        width: calc(100% - 200px);
+        margin: 20px 100px;
+    }
     &--details{
         text-align: center;
     }

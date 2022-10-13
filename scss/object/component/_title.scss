@@ -109,23 +109,50 @@ archive
     font-size: 36px;
     color: #fff;
     padding: 105px 0 7px 35px;
+    @include mixin.tab{
+        font-size: 60px;
+        padding: 102px 0 102px 86px;
+    }
+    @include mixin.pc{
+        padding: 80px 0 0 86px;
+    }
 }
 
 .c-subheading__title{
     font-size: 28px;
     padding: 30px 0 10px 22px;
     color: #3C2A10;
+    @include mixin.tab{
+        font-size: 36px;
+        padding: 36px 0 10px 40px;
+    }
+    @include mixin.pc{
+        padding: 60px 0 10px 100px;
+    }
 }
 
 .c-card__content--title{
     font-size: 20px;
     padding: 32px 0 24px 17px;
     color: #fff;
-
+    @include mixin.tab{
+        padding: 30px 0 0 35px;
+    }
+    @include mixin.pc{
+        font-size: 36px;
+        padding: 53px 0 0 63px;
+    }
 }
 
 .c-card__content--subtitle{
     font-size: 16px;
     color: #fff;
     padding-left: 17px;
+    @include mixin.tab{
+        padding: 24px 0 0 35px;
+    }
+    @include mixin.pc{
+        font-size: 24px;
+        padding: 47px 0 0 63px;
+    }
 }

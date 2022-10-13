@@ -109,21 +109,28 @@ archieve
         object-fit: cover;
         object-position: left;
         background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+        @include mixin.tab{
+            height: 283px;
+        }
+        @include mixin.pc{
+            height: 239px;
+        }
     }
 }
 
-.p-card__content{
-    position: relative;
-    background-color: #3C2B1C;
-    width: calc(100% - 40px);
-    margin: 0 20px;
-
-
-    > img{
-        width: 100%;
-        height: 230px;
-        object-fit: cover;
-        object-position: left center;
-        background-repeat: no-repeat;
+.p-card__content > img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: left center;
+    background-repeat: no-repeat;
+    @include mixin.tab{
+        width: 50%; 
+        height: 355px;
+    }
+    @include mixin.pc{
+        width: 50%;
+        height: 471px;
     }
 }

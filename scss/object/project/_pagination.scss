@@ -1,6 +1,9 @@
 @use "../../foundation/mixin";
 
 .p-pagination--sp{
+    @include mixin.tab{
+        display: none;
+    }
     &__lists{
         display: flex;
         justify-content: space-between;
@@ -15,17 +18,47 @@
     &__list{
         &--prev{
             &::before{
-                content: '<<';
+                content: url(/img/pagination_prev.png);
+                font-size: 30px;
                 width: 17px;
                 height: 17px;
+                font-weight: lighter;
+                margin-left: 19px;
             }
         }
         &--next{
             &::after{
-                content: '>>';
+                content: url(/img/pagination_next.png);
+                font-size: 30px;
                 width: 17px;
                 height: 17px;
+                font-weight: lighter;
+                margin-left: 15px;
             }    
         }
     }
+    @include mixin.tab{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 85px 0 30px;
+        line-height: 35px;
+        &__list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &--items{
+                border: solid 1px;
+                font-size: 16px;
+                margin-left: 15px;
+
+                >a{
+                    width: 35px;
+                    height: 35px; 
+                    padding: 13px;
+                    line-height: 35px;
+                }
+            }
+        }
+    } 
 }

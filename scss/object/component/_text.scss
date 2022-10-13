@@ -51,14 +51,27 @@ archive
     top: 0;
     padding: 160px 0 0 35px;
     color: #fff;
+    @include mixin.tab{
+        padding: 140px 0 0 305px;
+    }
+    @include mixin.pc{
+        padding-top: 120px;
+    }
 }
 
 .c-subheading__text{
     font-size: 16px;
     font-weight: normal;
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     color: #3C2A10;
+    @include mixin.tab{
+        padding: 15px 40px 0 40px;
+    }
+
+    @include mixin.pc{
+        padding: 15px 100px 0 100px;
+    }
 }
 
 .c-card__content--text{
@@ -66,4 +79,11 @@ archive
     font-weight: normal;
     padding: 10px 73px 0 17px;
     color: #fff;
+    @include mixin.tab{
+        padding: 10px 59px 0 35px;
+    }
+    @include mixin.pc{
+        padding: 17px 100px 0 63px;
+    }
+
 }

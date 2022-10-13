@@ -48,5 +48,13 @@ archive
     border: none;
     margin: 40px 0 44px;
     padding: 10px 42px;
-    border-radius: 20px;
+    border-radius: 30px;
+    @include mixin.tab{
+        bottom: -40px;
+    }
+    @include mixin.pc{
+        margin-top: 60px;
+        padding: 27px 106px;
+        border-radius: 40px;
+    }
 }    
