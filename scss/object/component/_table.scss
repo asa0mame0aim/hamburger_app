@@ -1,0 +1,23 @@
+@use "../../foundation/mixin";
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0 30px;
+    @include mixin.tab{
+        margin: 40px 0 60px; 
+    }
+}
+
+table th, table td{
+    border: solid 1px #707070;
+}
+
+table td{
+    padding: 28px 0 28px 30px;
+    font-weight: normal;
+}
+
+.p-table{
+    width: 60%;
+}

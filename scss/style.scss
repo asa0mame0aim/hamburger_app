@@ -22,7 +22,7 @@ component
 ---------------------------*/
 @use "object/component/background";
 @use "object/component/button";
-@use "object/component/inner";
+@use "object/component/table";
 @use "object/component/items";
 @use "object/component/text";
 @use "object/component/title";
@@ -36,6 +36,9 @@ project
 @use "object/project/branchmenu";
 @use "object/project/content";
 @use "object/project/pagination";
+@use "object/project/wrapper";
+@use "object/project/quotation";
+@use "object/project/preformatted";
 
 /*----------------------------
 utility

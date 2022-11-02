@@ -8,21 +8,47 @@ archive
     position: relative;
     background-color: #3C2B1C;
     height: 100%;
-    width: calc(100% - 40px);
-    margin: 20px;
+    width: 100%;
+    margin: 20px 0;
     @include mixin.tab{
         display: flex;
         height: 355px;
-        width: calc(100% - 80px);
-        margin: 20px 40px;
-
     }
     @include mixin.pc{
         height: 471px;
-        width: calc(100% - 200px);
-        margin: 20px 100px;
     }
     &--details{
         text-align: center;
+    }
+}
+
+
+/*-------------------------
+single
+--------------------------*/
+
+.p-card__content{
+    &--small{
+        display: grid;
+        width: 100%;
+    }
+    &--medium{
+        text-align: center;
+    }   
+}
+
+.p-card--first{
+    grid-template-columns: 40% 60%;
+    padding-bottom: 30px;
+    @include mixin.tab{
+        padding-bottom: 120px;
+    }
+}
+
+.p-card--second{
+    grid-template-columns: 60% 40%;
+    padding-bottom: 30px;
+    @include mixin.tab{
+        padding-bottom: 60px;
     }
 }

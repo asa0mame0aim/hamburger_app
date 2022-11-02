@@ -134,3 +134,90 @@ archieve
         height: 471px;
     }
 }
+
+
+/*-------------------------
+single
+--------------------------*/
+
+.p-single-visual{
+    position: relative;
+    > img{
+        height: 225px;
+        width: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        @include mixin.tab{
+            height: 500px;
+        }
+    }
+}
+
+.c-card__content--top >img{
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-bottom: 30px;
+    @include mixin.tab{
+        margin-bottom: 60px;
+    }
+}
+
+.p-card__content--small > li > img{
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.p-card--first > li > img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.p-card--second > li > img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.p-card__content--medium > img{
+    width: calc(100% - 68px);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 100%;
+    margin: 0 34px 30px 34px;
+    @include mixin.tab{
+        width: calc(100% - 100px);
+        margin: 0 50px 230px;
+    }
+    @include mixin.pc{
+        width: 50%;
+        margin-bottom: 60px;
+    }
+}
+
+.c-card__content--large{
+    @include mixin.tab{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    > img{
+        width: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        margin-bottom: 20px;
+        @include mixin.tab{
+            width: calc(50% - 16px);
+            margin: 10px 8px;
+        }
+        @include mixin.pc{
+            width: calc(33.3% - 20px);
+            margin: 10px;
+        }  
+    }
+}
+
+.c-large__first{
+    @include mixin.tab{
+        margin-right: 16px;        
+    }
+}

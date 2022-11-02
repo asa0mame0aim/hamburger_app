@@ -1,0 +1,56 @@
+@use "../../foundation/mixin";
+
+.c-archive-visual__list{
+    display: flex;
+    @include mixin.tab{
+        position: absolute;
+        top: 100px;
+        left: 86px;
+        align-items: center;
+    }
+    @include mixin.pc{
+        top: 80px;
+    }
+}
+
+/*-------------------------
+single
+--------------------------*/
+
+.p-order-list{
+    font-weight: normal;
+}
+.p-normal-list{
+    font-weight: normal;
+}
+
+.c-order-list{
+    &--first{
+        padding: 20px 0 10px;
+        @include mixin.tab{
+            padding-top: 50px;
+        }
+    }
+    &--second{
+        padding: 10px 0;
+        text-indent: 1rem;
+    }
+    &--third{
+        padding: 10px 0 30px;
+    }
+}
+.c-normal-list{
+    &--fourth{
+        padding: 30px 0 10px;
+    }
+    &--fifth{
+        padding: 10px 0;
+        text-indent: 1rem;
+    }
+    &--sixth{
+        padding: 10px 0;
+        @include mixin.tab{
+            padding-bottom: 40px;
+        }
+    }
+}

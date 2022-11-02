@@ -11,6 +11,10 @@
         font-weight: normal;
         padding: 40px 20px 30px 20px;
     }
+    &__list > a{
+        color: #707070;
+        text-decoration: none;
+    }   
 }
 
 .p-pagination{
@@ -41,7 +45,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 85px 0 30px;
+        padding: 85px 0 30px;
         line-height: 35px;
         &__list{
             display: flex;
@@ -57,8 +61,13 @@
                     height: 35px; 
                     padding: 13px;
                     line-height: 35px;
+                    color: #707070;
+                    text-decoration: none;
                 }
             }
         }
+    }
+    @include mixin.pc{
+        padding: 130px 0 65px;
     } 
 }

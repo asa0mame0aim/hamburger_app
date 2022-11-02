@@ -57,4 +57,25 @@ archive
         padding: 27px 106px;
         border-radius: 40px;
     }
-}    
+}
+
+/*-------------------------
+single
+--------------------------*/
+
+.c-single__btn{
+    width: 100%;
+    background-color: #F2EDE9;
+    border-radius: 20px;
+    padding: 30px 143px;
+    margin-bottom: 30px;
+    border: solid 1px #707070;
+    @include mixin.tab{
+        margin-bottom: 60px;
+    }
+    > a{
+        text-decoration: none;
+        color: #3C2A10;
+        font-size: 16px;    
+    }
+}
