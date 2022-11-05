@@ -1,5 +1,5 @@
 body {
-  font-family: "Robot", sans-serif;
+  font-family: "M+ 1m", sans-serif;
   font-weight: bold;
   color: #707070;
   width: 100%;
@@ -29,6 +29,7 @@ body li {
 .l-header a {
   text-decoration: none;
   color: #707070;
+  font-family: "Robot", sans-serif;
 }
 @media screen and (min-width: 600px) {
   .l-header {
@@ -362,6 +363,7 @@ single
   top: 14px;
   right: 16px;
   color: #707070;
+  font-family: "Robot", sans-serif;
   font-weight: bold;
   border: none;
 }
@@ -478,6 +480,16 @@ table td {
   align-items: flex-end;
   margin-top: auto;
 }
+@media screen and (min-width: 600px) {
+  .p-bm__items {
+    padding: 7px 15px 15px 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .p-bm__items {
+    padding: 12px 20px 20px 20px;
+  }
+}
 .p-bm__itemssecond {
   margin-top: auto;
 }
@@ -508,7 +520,6 @@ table td {
 .c-text--map {
   position: relative;
   color: #fff;
-  font-family: "M+PLUS+1";
   font-size: 14px;
   margin: 0 auto;
   padding: 20px 40px 40px 40px;
@@ -684,7 +695,13 @@ single
   position: absolute;
   left: 25px;
   line-height: 285px;
-  font-family: "M+PLUS+1";
+}
+@media screen and (min-width: 1280px) {
+  .c-title--main-visual {
+    font-size: 40px;
+    line-height: 530px;
+    left: 86px;
+  }
 }
 .c-title--underline {
   position: relative;
@@ -692,6 +709,7 @@ single
   left: 15px;
   font-size: 41px;
   color: #EAEAEA;
+  font-family: "Robot", sans-serif;
   margin-bottom: 100px;
 }
 @media screen and (min-width: 1280px) {
@@ -720,12 +738,16 @@ single
   font-size: 22px;
   padding: 7px 0 3px 10px;
 }
+@media screen and (min-width: 600px) {
+  .c-title--branch-menu {
+    font-size: 24px;
+  }
+}
 .c-title--underline__map {
   position: relative;
   z-index: 3;
   color: #fff;
   font-size: 30px;
-  font-family: "M+PLUS+1";
   padding: 40px 0 20px 42px;
 }
 @media screen and (min-width: 1280px) {
@@ -754,6 +776,7 @@ archive
 --------------------------*/
 .c-archive-visual__title {
   position: absolute;
+  font-family: "Robot", sans-serif;
   top: 0;
   font-size: 36px;
   color: #fff;
@@ -1103,6 +1126,7 @@ single
 
 .p-pagination {
   display: none;
+  font-family: "Robot", sans-serif;
 }
 .p-pagination__list--prev::before {
   content: url(/img/pagination_prev.png);
@@ -1110,7 +1134,13 @@ single
   width: 17px;
   height: 17px;
   font-weight: lighter;
-  margin-left: 19px;
+  margin-left: 15px;
+  margin-right: 3px;
+}
+@media screen and (min-width: 1280px) {
+  .p-pagination__list--prev::before {
+    margin-right: 0;
+  }
 }
 .p-pagination__list--next::after {
   content: url(/img/pagination_next.png);
@@ -1135,16 +1165,26 @@ single
   }
   .p-pagination__list--items {
     border: solid 1px;
+    font-size: 14px;
+    margin-left: 12px;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1280px) {
+  .p-pagination__list--items {
     font-size: 16px;
     margin-left: 15px;
   }
+}
+@media screen and (min-width: 600px) {
   .p-pagination__list--items > a {
-    width: 35px;
-    height: 35px;
-    padding: 13px;
-    line-height: 35px;
+    padding: 12px;
     color: #707070;
     text-decoration: none;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1280px) {
+  .p-pagination__list--items > a {
+    padding: 13px;
   }
 }
 @media screen and (min-width: 1280px) {

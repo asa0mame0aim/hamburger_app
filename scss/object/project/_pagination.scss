@@ -19,6 +19,7 @@
 
 .p-pagination{
     display: none;
+    font-family: 'Robot', sans-serif;
     &__list{
         &--prev{
             &::before{
@@ -27,7 +28,11 @@
                 width: 17px;
                 height: 17px;
                 font-weight: lighter;
-                margin-left: 19px;
+                margin-left: 15px;
+                margin-right: 3px;
+                @include mixin.pc{
+                    margin-right: 0;
+                }
             }
         }
         &--next{
@@ -53,16 +58,20 @@
             align-items: center;
             &--items{
                 border: solid 1px;
-                font-size: 16px;
-                margin-left: 15px;
+                font-size: 14px;
+                margin-left: 12px;
+                @include mixin.pc{
+                    font-size: 16px;
+                    margin-left: 15px;
+                }
 
                 >a{
-                    width: 35px;
-                    height: 35px; 
-                    padding: 13px;
-                    line-height: 35px;
+                    padding: 12px;
                     color: #707070;
                     text-decoration: none;
+                    @include mixin.pc{
+                        padding: 13px;
+                    }    
                 }
             }
         }

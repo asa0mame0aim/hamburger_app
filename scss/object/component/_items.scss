@@ -9,6 +9,12 @@
     margin: 0 15px 15px 15px;
     align-items: flex-end;
     margin-top: auto;
+    @include mixin.tab{
+        padding: 7px 15px 15px 15px;
+    }
+    @include mixin.pc{
+        padding: 12px 20px 20px 20px;
+    }
     &second{
         margin-top: auto;
     }

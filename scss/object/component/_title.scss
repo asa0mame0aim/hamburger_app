@@ -39,7 +39,11 @@
         position: absolute;
         left: 25px;
         line-height: 285px;
-        font-family: 'M+PLUS+1';
+        @include mixin.pc{
+            font-size: 40px;
+            line-height: 530px;
+            left: 86px;
+        }
     }
 
     &--underline{
@@ -48,6 +52,7 @@
         left: 15px;
         font-size: 41px;
         color: #EAEAEA;
+        font-family: 'Robot', sans-serif;
         margin-bottom: 100px;
         @include mixin.pc{
             font-size: 80px;
@@ -72,6 +77,9 @@
     &--branch-menu{
         font-size: 22px;
         padding: 7px 0 3px 10px;
+        @include mixin.tab{
+            font-size: 24px; 
+        }
     }
 
     &--underline__map{
@@ -79,7 +87,6 @@
         z-index: 3;
         color: #fff;
         font-size: 30px;
-        font-family: 'M+PLUS+1';
         padding: 40px 0 20px 42px;
         @include mixin.pc{
             font-size: 36px;
@@ -105,6 +112,7 @@ archive
 
 .c-archive-visual__title{
     position: absolute;
+    font-family: 'Robot', sans-serif;
     top: 0;
     font-size: 36px;
     color: #fff;
