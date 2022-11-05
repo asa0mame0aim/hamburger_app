@@ -73,6 +73,8 @@ single
     border: solid 1px #707070;
     @include mixin.tab{
         margin-bottom: 60px;
+        width: 430px;
+        padding: 40px 0;
     }
     > a{
         text-decoration: none;
